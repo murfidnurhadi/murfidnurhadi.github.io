@@ -1,0 +1,18 @@
+.color-gradient {
+	  background-image: linear-gradient(to bottom right, #422fff, #FFC0CB);
+}
+
+.gradient-amber {
+	  background-image: linear-gradient(to bottom right, #ffb100, #e29c00);
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+}
+	50% {
+		background-position: 100% 50%
+}
+	100% {
+		background-position: 0% 50%
+}

@@ -1,0 +1,26 @@
+body {
+/*	backdrop-filter: blur(2px);*/
+	min-height: 100vh;
+	background-image: url("foto/hutao.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.color-gradient {
+	  background-image: linear-gradient(to bottom right, #0007da, #6e86d5);
+}
+
+.gradient-amber {
+	  background-image: linear-gradient(to bottom right, #ffb100, #e29c00);
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+}
+	50% {
+		background-position: 100% 50%
+}
+	100% {
+		background-position: 0% 50%
+}
