@@ -1,0 +1,124 @@
+<form name=form1>
+    <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\style2.css">
+    <link rel="stylesheet" href="css\style3.css">
+    <title>Data Mahasiswa</title>
+     <script>
+function hanyaAngka(event) {
+    var angka = (event.which) ? event.which : event.keyCode
+    if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
+        return false;
+    return true;}
+
+function proses() {
+    document.form1.nim.value;
+    document.form1.nama.value;
+    document.form1.alamat.value;
+    ("welcome");}
+
+function hapus() {
+    window.location.href = "indexmasuk.html"; 
+}
+
+function next() {
+    window.location.href = "indexakhir.html"; 
+}
+
+function kembali() {
+    window.location.href = "indexlogin.html"; 
+}
+
+function home() {
+    window.location.href = "../home.html"; 
+}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="w3-container">
+    <a href="https://lms.unikom.ac.id/?redirect=0" class="logo">
+        <span class="logo-lg"><img src="foto/logo.png" width="100px" height="100px"></span>
+    </a>
+    <div class="w3-container">
+        <center>
+            <h1 class="w3-panel w3-indigo w3-card-4">Formulir Data Siswa Kelas IF-1</h1>
+        </center>
+        </div>
+            
+    <div class="w3-panel w3-animate-bottom w3-green w3-card-4">
+        <center>
+            <h1>Data Mahasiswa</h1>
+        </center>
+    </div>
+    <div class="w3-panel animation w3-card-4">
+        <p>
+            <center>
+                <table>
+                    <tr><td>NIM<td>:<input type="text" name="angka" placeholder="" onkeypress="return hanyaAngka(event)" size="40">
+                    <tr><td>NAMA<td>:<input name="nama" size="40">
+                    <tr><td>ALAMAT<td>:<input name="alamat" size="40">
+                    <tr><td>Nomor Telepon<td>:<input type="text" name="angka" placeholder="" onkeypress="return hanyaAngka(event)" size="40">
+                    <tr><td>Tanggal Lahir<td>:<input type="date" name="tanggal"size="40">
+                </table>
+            </p>
+        </div>
+        <center>
+        <div class="w3-panel w3-animate-bottom gradient-amber w3-card-4">     
+                <h1>Hobi</h1>
+                </div>
+                <div class="w3-panel animation-dua w3-card-4">
+                    <p>
+                        <form action="" method="get">
+                            <table>
+                                <tr><td><td><input type="checkbox" name='bahasa1' value='' />Games</td>
+                                <tr><td><td><input type="checkbox" name='bahasa2' value='' />Musik</td>
+                                <tr><td><td><input type="checkbox" name='bahasa3' value='' />Renang</td>
+                                <tr><td><td><input type="checkbox" name='bahasa4' value='' />Anime</td>
+                                <tr><td><td><input type="checkbox" name='bahasa5' value='' disabled />Makan</td>
+                            </table>
+                        </form>
+                    </p>
+                </div>
+            </center>
+            <center>
+        <div class="w3-panel w3-animate-bottom w3-purple w3-card-4">
+                <h1>Jenis Kelamin</h1>
+            </div>
+                <div class="w3-panel animation w3-card-4">
+                <p>
+                    <form action="" method="get">
+                        <table>
+                                <tr><td><td><input type="radio" name='jenis1' value='' />Laki-laki</td>
+                                <tr><td><td><input type="radio" name='jenis2' value='' />Perempuan</td>
+                                <tr><td><td><input type="radio" name='jenis3' value='' disabled />Tidak Ingin Memberi Tahu</td>
+                            </table>
+                    </form>
+                </p>
+            </div>
+            </center>
+            <center>
+        <div class="w3-panel w3-animate-bottom w3-green w3-card-4">
+                <h1>Tempat Favorit</h1>
+            </div>
+                <div class="w3-panel select animation">
+                    <select>
+                        <option value="0">Pilih Tempat Favorit</option>
+                        <option value="1">Event Cosplay</option>
+                        <option value="2">Pantai</option>
+                        <option value="3">Bioskop</option>
+                        <option value="4">Kebun Binatang</option>
+                        <option value="5" disabled  >Rumah</option>
+                    </select>
+                </div>
+            </center>
+                <center>
+                <input type="button" class="w3-button w3-animate-bottom w3- w3-aqua" value="Home" onclick="home()">
+                <input type="button" class="w3-button w3-animate-bottom w3-pink" value="Kirim" onclick="proses()">
+                <input type="button" class="w3-button w3-animate-bottom w3-blue" value="Batal" onclick="hapus(all)">
+                <input type="button" class="w3-button w3-animate-bottom w3-yellow" value="Next" onclick="next(all)">
+                <input type="button" class="w3-button w3-animate-bottom w3- w3-green" value="Kembali" onclick="kembali()">
+            </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url("https:fonts.googleapis.com/css2?family=Poppins")
+
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins' sans-serif;
+}
+
+body {
+/*	backdrop-filter: blur(2px);*/
+	min-height: 100vh;
+	background: url("foto/raidenshogun.jpg");
+/*	background: url("foto/wallpaper.jpg");*/
+	background-size: cover;
+	background-position: center;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 90%;
+	padding: 20px 100px;
+	/*background-image: linear-gradient(to bottom right, blue, yellow);*/	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+	/*opacity: .8;*/
+}
+
+br {
+	display: block; 
+	margin-bottom: 100em; 
+}
+
+:root {
+  --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+}
+
+select {
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: #f39c12;
+}
+
+.kotak {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0, 8);
+	padding: 10px;
+	border: 1px #1e90ff;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.animation {
+	color: #fff;
+	background: linear-gradient(-45deg, #2b0070, #390f87, #650ac0, #ffffff, #ffffff);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+.animation-dua {
+	color: #fff;
+	background: linear-gradient(-45deg, #2b0070, #390f87, #650ac0, #ffffff, #ffffff);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+.logo-lg {
+    display: flex;
+    background-position: 100%;
+}
+
+#footer {
+	position:absolute;
+	background: transparent;
+	backdrop-filter: blur(10px);
+	bottom: -425px;
+	width:100%;
+	height:72px;
+	font-size: 1em;
+	text-align: center;
+	font-family: arial;
+	padding: 23px;
+	position: ;;
+}
+
+#footer-login {
+	position:absolute;
+	background: transparent;
+	backdrop-filter: blur(10px);
+	bottom: -339px;
+	width:100%;
+	height:72px;
+	font-size: 1em;
+	text-align: center;
+	font-family: arial;
+	padding: 23px;
+	position: ;
+}
+
+.color-gradient {
+	  background-image: linear-gradient(to bottom right, #422fff, #FFC0CB);
+}
+
+.gradient-amber {
+	  background-image: linear-gradient(to bottom right, #ffb100, #e29c00);
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+}
+	50% {
+		background-position: 100% 50%
+}
+	100% {
+		background-position: 0% 50%
+}
+
