@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
-    <title>Latihan Pertemuan 11</title>
+    <title>Pemesanan Tiket Kereta Api</title>
     <script>
         function proses() {
           var kotatujuan=document.form.kotatujuan.value;
@@ -14,32 +12,35 @@
           else if(kotatujuan=="CIREBON")var harga=150000;
           else if(kotatujuan=="SEMARANG")var harga=200000;
 
-          // var fasilitas=document.form.fasilitas.value;
-          // if(fasilitas=="makan") var harga=
+          if(document.form.makan.checked) harga=harga+25000;
+          else if(document.form.minum.checked) harga=harga+10000;
+          else if(document.form.wifi.checked) harga=harga+5000;
 
           document.form.harga.value=harga;
           var jumlah=document.form.jumlah.value;
           var total=harga*jumlah;
           document.form.totalharga.value=total;
-            
         }
 
         function hapus() {
-            document.form.reset();
+            document.form.namapemesan.value='';
+            document.form.harga.value='';
+            document.form.totalharga.value='';
+            document.form.makan.checked=false;;
+            document.form.minum.checked=false;;
+            document.form.wifi.checked=false;
+            document.form.jumlah[0].checked=false;
+            document.form.jumlah[1].checked=false;
+            document.form.jumlah[2].checked=false;
         }
-
-        function home() {
-            window.location.href = "../home.html"; 
-        }
-
         function back() {
-            window.location.href = "indexmasuk.html"; 
+            window.location.href = "../home.html";
         }
     </script>
 </head>
 <body>
     <div class="w3-container">
-        <div class="w3-panel w3-red w3-card-4">
+        <div class="w3-panel w3-red w3-card-4 w3-animate-bottom">
             <center>
                 <h1>PROGRAM TIKET KERETA API</h1>
             </center>
@@ -47,34 +48,34 @@
     </div>
 
     <div class="w3-container">
-        <div class="w3-panel w3-cyan w3-card-4">
+        <div class="w3-panel w3-cyan w3-card-4 w3-animate-bottom">
             <center>
                 <form name="form">
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <td>NAMA PEMESAN</td>
                             <td><input class="w3-input" type="text" name="namapemesan"></td>
                         </tr>
                         <tr>
-                            <td>FASILITAS</td>
-                            <input class="w3-checkbox" type="checkbox" name ="makan">
-                            <label>Rendah</label><br>
-                            <input class="w3-checkbox" type="checkbox" name ="minum">
-                            <label>Normal</label><br>
-                            <input class="w3-checkbox" type="checkbox" name ="">
-                            <label>Lumayan</label><br>
-
-                        </tr>
-                         <tr>
                             <td>KOTA TUJUAN</td>
                             <td>
                                 <select class="w3-select" name="kotatujuan">
-                                	<option></option>
                                     <option>BANDUNG</option>
                                     <option>JAKARTA</option>
                                     <option>CIREBON</option>
                                     <option>SEMARANG</option>
                                 </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>FASILITAS</td>
+                            <td>
+                                <input class="w3-check" type="checkbox" name="makan">
+                                <label>Makan</label> <br>
+                                <input class="w3-check" type="checkbox" name="minum">
+                                <label>Minum</label> <br>
+                                <input class="w3-check" type="checkbox" name="wifi">
+                                <label>Wifi</label>
                             </td>
                         </tr>
                         <tr>
@@ -96,21 +97,21 @@
                             <td>TOTAL HARGA</td>
                             <td><input class="w3-input" type="text" name="totalharga"></td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </form>
             </center>
         </div>
     </div>
 
     <div class="w3-container">
-        <div class="w3-panel w3-animate-bottom w3-blue w3-large">
+        <div class="w3-panel w3-blue w3-card-4 w3-animate-bottom">
             <center>
-                <input type="button" class="w3-button w3-animate-bottom w3-green" value="Home" onclick="home()">
-                <input type="button" class="w3-button w3-animate-bottom w3-pink" value="Proses" onclick="proses()">
-                <input type="button" class="w3-button w3-animate-bottom w3-yellow" value="Reset" onclick="hapus()">
-                <input type="button" class="w3-button w3-animate-bottom w3-aqua" value="Back" onclick="back()">
+                <input type="button" class="w3-button w3-green" value="proses" onclick="proses()">
+                <input type="button" class="w3-button w3-pink" value="reset" onclick="hapus()">
+                <input type="button" class="w3-button w3-yellow" value="Back To Home" onclick="back()">
             </center>
         </div>
     </div>
-</body>
-</html>
+
+
+</body></html>
