@@ -24,6 +24,10 @@ header {
     background-image: url("foto/hutao.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+     width: 100%;
+  height: auto;
 }
 
 .background-header-dua {
@@ -31,6 +35,10 @@ header {
     background-image: url("foto/raiden.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+     width: 100%;
+  height: auto;
 }
 
 .background-header-tiga {
@@ -38,6 +46,10 @@ header {
     background-image: url("foto/nilou.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+     width: 100%;
+  height: auto;
 }
 
 .ad-button {
@@ -560,6 +572,17 @@ li {
 
     section {
         padding: 80px 20px;
+    }
+
+    .main {
+        background-image: url("foto/waifu.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+        height: auto;
     }
 
     .main h2 {
