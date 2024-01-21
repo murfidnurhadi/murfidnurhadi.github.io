@@ -73,17 +73,15 @@ select::-ms-expand {
 }
 
 .background-header {
+	padding: 10px;
 	background: url("foto/wallpaper.jpg");
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	 width: 100%;
-  height: auto;
+	height: 200px;
 }
 
 .background-header-dua {
+	min-height: 100vh;
 	background-image: url("foto/hutao2.png");
 	background-size: cover;
 	background-position: center;
