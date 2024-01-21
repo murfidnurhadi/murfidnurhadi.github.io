@@ -9,10 +9,14 @@
 
 body {
 /*	backdrop-filter: blur(2px);*/
-	min-height: 100vh;
-	background-image: url("foto/waifu.png");
-	background-size: cover;
-	background-position: center;
+		background-image: url("foto/waifu.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	  width: 100%;
+  	height: auto;
 }
 
 div {
@@ -22,8 +26,6 @@ div {
 h1 {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	color: whitesmoke;
-	animation: typing 7s steps(20, end) infinite alternate;
-
 	font-family: cursive;
 }
 
@@ -71,18 +73,25 @@ select::-ms-expand {
 }
 
 .background-header {
-	padding: 10px;
 	background: url("foto/wallpaper.jpg");
 	background-size: cover;
 	background-position: center;
-	height: 200px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	 width: 100%;
+  height: auto;
 }
 
 .background-header-dua {
-	min-height: 100vh;
 	background-image: url("foto/hutao2.png");
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	 width: 100%;
+  height: auto;
 }
 
 
@@ -163,6 +172,12 @@ select::-ms-expand {
 	font-family: arial;
 	padding: 23px;
 	position: ;;
+}
+
+@media screen and (max-width : 500px) {
+	body {
+		background-image: url("foto/waifu.png");
+	}
 }
 
 #footer {
