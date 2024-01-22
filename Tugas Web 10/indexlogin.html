@@ -1,62 +1,35 @@
-<form name=form1>
-	<body>
+<form name=form1></form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css\style.css">
 	<link rel="stylesheet" href="css\style2.css">
-	<link rel="icon" href="foto/icon.png">
-	<title>Menghitung Luas Persegi</title>
-<script>
-function proses()
-{
-	var p=document.form1.panjang.value;
-	var l=document.form1.lebar.value;
-	var luas=p*l;
-	var kel=(2*p) + (2*l);
-	document.form1.luas.value=luas;
-	document.form1.keliling.value=kel;
-	("halo tysw");
-}
+	<link rel="icon" href="foto\icon.png">
+	<title>Login Utama</title>
+	<style>
+		.w3-btn {width:150px;}
+	</style>
+	<script>
+		function pindahHalamanBaru() {
+			window.location.href = "indexutama.html"; 
+		}
 
-function hapus()
-{
-	document.form1.panjang.value='';
-	document.form1.lebar.value='';
-	document.form1.luas.value='';
-	document.form1.keliling.value='';
-
-}
-function kembali () {
-	window.location.href = "indexlogin.html"; 
-}
-
-function home() {
-	window.location.href = "../home.html"; 
-}
-</script>
-<div class="w3-container">
-	<div class="w3-panel w3-purple w3-card-4">
-	<center>
-	<h1>Menghitung Luas dan Keliling</h1>
-	</center>
-	</div>
-			<div class="w3-panel w3-green w3-card-4">
+		function home() {
+			window.location.href = "../home.html"; 
+		}
+	</script>
+</head>
 			<center>
-			<table>
-				<tbody><tr><td>Panjang</td><td>:<input name="panjang" size="5" value="2">
-				</td></tr><tr><td>Lebar</td><td>:<input name="lebar" size="5" value="3">
-				</td></tr><tr><td colspan="2"><hr>
-				</td></tr><tr><td>Luas</td><td>:<input name="luas" size="5" value="6">
-				</td></tr><tr><td>Keliling</td><td>:<input name="keliling" size="5" value="10">
-			</td></tr></tbody></table>
-			</center>
+				<button class="w3-button w3-grey w3-circle kotak" onclick="pindahHalamanBaru()">
+					<img src="foto\ayaka.png" alt="isigambar" style="width:320px;height:400px; border-radius: 50%;">
+				</button>
+				<br>
+				<button class="w3-button w3-purple kotak" onclick="home()">
+					<img src="foto\tantei.png" alt="isigambar" style="width:300px;height:400px">
+				</button>
 			</div>
-				<center>
-				<input type="button" class="w3-button w3-pink" value="Proses" onclick="proses()">
-				<input type="button" class="w3-button w3-blue" value="reset" onclick="hapus()">
-				<input type="button" class="w3-button w3- w3-green" value="kembali" onclick="kembali()">
-		</div>
-	</center>
-	</form>
-</body>
+		</center>
 </html>
