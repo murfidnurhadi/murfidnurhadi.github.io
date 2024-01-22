@@ -562,7 +562,6 @@ li {
     text-align: center;
 }
 
-
 @media(max-width:1080px) {
     header {
         padding: 12px 20px;
@@ -585,7 +584,7 @@ li {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center;
+        background-position: -990px;
         width: 100%;
         height: auto;
     }
@@ -595,7 +594,7 @@ li {
         background-image: url("foto/hutao.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: -1305px;
+        background-position: -1335px;
         width: 100%;
         height: auto;
     }
@@ -614,7 +613,7 @@ li {
         background-image: url("foto/nilou.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: -380px;
+        background-position: -420px;
         width: 100%;
         height: auto;
     }
