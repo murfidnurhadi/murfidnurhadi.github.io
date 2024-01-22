@@ -137,7 +137,7 @@ select::-ms-expand {
 
 .animation {
 	color: #fff;
-	background: linear-gradient(-45deg, #2b0070, #390f87, #650ac0, #ffffff, #ffffff);
+	background: linear-gradient(-45deg, #F44336, #9C27B0, #2196F3, #FF9800, #00BCD4);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -172,10 +172,51 @@ select::-ms-expand {
 	position: ;;
 }
 
-@media screen and (max-width : 500px) {
+.color-gradient {
+	  background-image: linear-gradient(to bottom right, #5d02ff, #7e50d1);
+}
+
+.color-gradient-satu {
+	background-image: linear-gradient(to bottom right, #f60000, #f2a027);
+}
+
+.color-gradient-dua {
+	background-image: linear-gradient(to bottom right, #ffa33b, #f8ae5d);
+}
+
+.color-gradient-tiga {
+	background-image: linear-gradient(to bottom right, #f0db09, #fbff64);
+}
+
+.color-gradient-empat {
+	background-image: linear-gradient(to bottom right, #00ff20, #00e208);
+}
+
+.color-gradient-lima {
+	background-image: linear-gradient(to bottom right, #0fa3b6, #57ecff);
+}
+
+.color-gradient-enam {
+	background-image: linear-gradient(to bottom right, #02147d, #3150ff);
+}
+
+@media(max-width:1080px) {
 	body {
 		background-image: url("foto/waifu.png");
-	}
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	  width: auto;
+  	height: auto;
+}
+
+    .background-header {
+    	padding: 10px;
+    	background: url("foto/wallpaper.jpg");
+    	background-size: cover;
+    	background-position: center;
+    	height: 200px;
 }
 
 #footer {
@@ -204,34 +245,6 @@ select::-ms-expand {
 	font-family: arial;
 	padding: 23px;
 	position: ;
-}
-
-.color-gradient {
-	  background-image: linear-gradient(to bottom right, #5d02ff, #7e50d1);
-}
-
-.color-gradient-satu {
-	background-image: linear-gradient(to bottom right, #f60000, #f2a027);
-}
-
-.color-gradient-dua {
-	background-image: linear-gradient(to bottom right, #ffa33b, #f8ae5d);
-}
-
-.color-gradient-tiga {
-	background-image: linear-gradient(to bottom right, #f0db09, #fbff64);
-}
-
-.color-gradient-empat {
-	background-image: linear-gradient(to bottom right, #00ff20, #00e208);
-}
-
-.color-gradient-lima {
-	background-image: linear-gradient(to bottom right, #0fa3b6, #57ecff);
-}
-
-.gradient-amber {
-	  background-image: linear-gradient(to bottom right, #ffb100, #e29c00);
 }
 
 @keyframes Gradient {
