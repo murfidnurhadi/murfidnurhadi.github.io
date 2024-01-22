@@ -1,42 +1,45 @@
-<form name=form1>
-    <body>
+<html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\style2.css">
     <link rel="stylesheet" href="css\style3.css">
-    <link rel="icon" href="../foto/icon.png">
+    <link rel="icon" href="..\foto\icon.png">
     <title>Data Mahasiswa</title>
-     <script>
-function hanyaAngka(event) {
-    var angka = (event.which) ? event.which : event.keyCode
-    if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
-        return false;
-    return true;}
+    <body>
+        <script>
+            function hanyaAngka(event) {
+                var angka = (event.which) ? event.which : event.keyCode
+                if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
+                    return false;
+                return true;
+            }
 
-function proses() {
-    document.form1.nim.value;
-    document.form1.nama.value;
-    document.form1.alamat.value;
-    ("welcome");}
+                function proses() {
+                    document.form1.nim.value;
+                    document.form1.nama.value;
+                    document.form1.alamat.value;
+                    ("welcome");
+            }
 
-function hapus() {
-    window.location.href = "indexmasuk.html"; 
-}
+                function hapus() {
+                    window.location.href = "indexmasuk.html"; 
+            }
 
-function next() {
-    window.location.href = "indexakhir.html"; 
-}
+                function next() {
+                    window.location.href = "indexakhir.html"; 
+            }
 
-function kembali() {
-    window.location.href = "indexlogin.html"; 
-}
+                function kembali() {
+                    window.location.href = "indexlogin.html"; 
+            }
 
-function home() {
-    window.location.href = "../home.html"; 
-}
-</script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+                function home() {
+                    window.location.href = "../home.html"; 
+            }
+        </script>
+
 <div class="w3-container">
     <a href="https://lms.unikom.ac.id/?redirect=0" class="logo">
         <span class="logo-lg"><img src="foto/logo.png" width="100px" height="100px"></span>
