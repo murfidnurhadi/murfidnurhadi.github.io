@@ -20,10 +20,8 @@ header {
 }
 
 .background-header {
-    min-height: 100vh;
     background-image: url("foto/hutao.png");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-position: center;
      width: 100%;
@@ -34,7 +32,6 @@ header {
     min-height: 100vh;
     background-image: url("foto/raiden.jpg");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-position: center;
      width: 100%;
@@ -45,7 +42,16 @@ header {
     min-height: 100vh;
     background-image: url("foto/nilou.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+     width: 100%;
+  height: auto;
+}
+
+.background-header-empat {
+    min-height: 100vh;
+    background-image: url("foto/hutao.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
      width: 100%;
@@ -557,7 +563,7 @@ li {
 }
 
 
-@media(max-width:1023px) {
+@media(max-width:1080px) {
     header {
         padding: 12px 20px;
     }
@@ -577,10 +583,48 @@ li {
     .main {
         background-image: url("foto/waifu.png");
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .background-header {
+        min-height: 100vh;
+        background-image: url("foto/hutao.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -1305px;
+        width: 100%;
+        height: auto;
+    }
+
+    .background-header-dua {
+        min-height: 100vh;
+        background-image: url("foto/raiden.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+
+    .background-header-tiga {
+        min-height: 100vh;
+        background-image: url("foto/nilou.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -380px;
+        width: 100%;
+        height: auto;
+    }
+
+    .background-header-empat {
+        min-height: 100vh;
+        background-image: url("foto/hutao.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -690px;
         width: 100%;
         height: auto;
     }
