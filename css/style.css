@@ -58,6 +58,15 @@ header {
   height: auto;
 }
 
+.animation {
+    color: #fff;
+    background: linear-gradient(-45deg, #F44336, #9C27B0, #2196F3, #FF9800, #00BCD4);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
 .ad-button {
     border:none;
     display:inline-block;
