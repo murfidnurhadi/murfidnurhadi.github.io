@@ -176,9 +176,8 @@ section {
     margin-bottom: 30px;
 }
 
-p {
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+p1 {
+    color: #000;
     letter-spacing: 1px;
 }
 li {
