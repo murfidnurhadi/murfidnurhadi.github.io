@@ -570,7 +570,7 @@ li {
     text-align: center;
 }
 
-@media(max-width:1080px) {
+@media(max-width:600px) {
     header {
         padding: 12px 20px;
     }
@@ -650,7 +650,7 @@ li {
     }
 }
 
-@media(max-width:641px) {
+@media(max-width:600px) {
     body {
         font-size: 12px;
     }
