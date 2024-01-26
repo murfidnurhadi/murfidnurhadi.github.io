@@ -191,7 +191,7 @@ select::-ms-expand {
 	background-image: linear-gradient(to bottom right, #02147d, #3150ff);
 }
 
-@media(max-width:600px) {
+@media(max-width:1080px) {
 	body {
 		background-image: url("foto/waifu.png");
 		background-size: cover;
