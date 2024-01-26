@@ -1,5 +1,6 @@
 <html>
 <head>
+	<form name=form1>
 	<title>Program Menghitung Luas Persegi Panjang</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,23 @@
 	<link rel="stylesheet" href="css\style2.css">
 	<link rel="icon" href="..\foto/icon.png">
 <body>
+</head>
 	<script>
-function proses()
-{
-	var p=document.form1.panjang.value;
-	var l=document.form1.lebar.value;
-	var luas=p*l;
-	var kel=(2*p) + (2*l);
-	document.form1.luas.value=luas;
-	document.form1.keliling.value=kel;
-	("halo tysw");
-}
+		function proses() {
+			var p=document.form1.panjang.value;
+			var l=document.form1.lebar.value;
+			var luas=p*l;
+			var kel=(2*p) + (2*l);
+			document.form1.luas.value=luas;
+			document.form1.keliling.value=kel;
+			// ("halo tysw");
+		}
 
-function hapus()
-{
-	document.form1.panjang.value='';
-	document.form1.lebar.value='';
-	document.form1.luas.value='';
-	document.form1.keliling.value='';
+		function hapus() {
+			document.form1.panjang.value='';
+			document.form1.lebar.value='';
+			document.form1.luas.value='';
+			document.form1.keliling.value='';
 
 }
 function kembali () {
@@ -35,7 +35,6 @@ function home() {
 	window.location.href = "../home.html"; 
 }
 </script>
-</head>
 <div class="w3-container">
 	<div class="w3-panel w3-purple w3-card-4">
 	<center>
