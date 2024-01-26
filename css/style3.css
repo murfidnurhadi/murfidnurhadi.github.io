@@ -73,7 +73,6 @@ select::-ms-expand {
 }
 
 .background-header {
-	padding: 10px;
 	background: url("foto/wallpaper.jpg");
 	background-size: cover;
 	background-position: center;
@@ -83,11 +82,10 @@ select::-ms-expand {
 .background-header-dua {
 	min-height: 100vh;
 	background-image: url("foto/hutao2.png");
-	background-size: cover;
+	background-size: auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
 	 width: 100%;
   height: auto;
 }
@@ -191,7 +189,7 @@ select::-ms-expand {
 	background-image: linear-gradient(to bottom right, #02147d, #3150ff);
 }
 
-@media(max-width:1080px) {
+@media(max-width:600px) {
 	body {
 		background-image: url("foto/waifu.png");
 		background-size: cover;
@@ -248,4 +246,3 @@ select::-ms-expand {
 	100% {
 		background-position: 0% 50%
 }
-
