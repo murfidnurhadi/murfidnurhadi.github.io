@@ -570,7 +570,7 @@ li {
     text-align: center;
 }
 
-@media(max-width:600px) {
+@media(max-width:1080px) {
     header {
         padding: 12px 20px;
     }
