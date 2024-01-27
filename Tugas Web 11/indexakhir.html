@@ -13,15 +13,28 @@
           else if(kotatujuan=="JAKARTA")var harga=120000;
           else if(kotatujuan=="CIREBON")var harga=150000;
           else if(kotatujuan=="SEMARANG")var harga=200000;
+          else if(kotatujuan=="SOLO")var harga=560000;
+          else if(kotatujuan=="BALI")var harga=800000;
 
           if(document.form.makan.checked) harga=harga+25000;
           else if(document.form.minum.checked) harga=harga+10000;
           else if(document.form.wifi.checked) harga=harga+5000;
+          else if(document.form.tidur.checked) harga=harga+5000;
 
           document.form.harga.value=harga;
           var jumlah=document.form.jumlah.value;
           var total=harga*jumlah;
-          document.form.totalharga.value=total;
+          document.form.totalharga.value=('.')+(total);
+
+          // Format rupiah
+          var formatRupiah = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(harga);
+          document.form.harga.value = formatRupiah;
+          var jumlah = document.form.jumlah.value;
+          var total = harga * jumlah;
+          
+          // Format rupiah
+          var formatTotal = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(total);
+          document.form.totalharga.value = formatTotal;
         }
 
         function hapus() {
@@ -34,6 +47,9 @@
             document.form.jumlah[0].checked=false;
             document.form.jumlah[1].checked=false;
             document.form.jumlah[2].checked=false;
+            document.form.jumlah[3].checked=false;
+            document.form.jumlah[4].checked=false;
+            document.form.jumlah[5].checked=false;
         }
         function back() {
             window.location.href = "../home.html";
@@ -56,7 +72,7 @@
                     <table>
                         <tbody><tr>
                             <td>NAMA PEMESAN</td>
-                            <td><input class="w3-input" type="text" name="namapemesan"></td>
+                            <td><input class="w3-input" alt="Mur.Fidznx_" type="text" name="namapemesan"></td>
                         </tr>
                         <tr>
                             <td>KOTA TUJUAN</td>
@@ -66,6 +82,8 @@
                                     <option>JAKARTA</option>
                                     <option>CIREBON</option>
                                     <option>SEMARANG</option>
+                                    <option>SOLO</option>
+                                    <option>BALI</option>
                                 </select>
                             </td>
                         </tr>
@@ -77,7 +95,9 @@
                                 <input class="w3-check" type="checkbox" name="minum">
                                 <label>Minum</label> <br>
                                 <input class="w3-check" type="checkbox" name="wifi">
-                                <label>Wifi</label>
+                                <label>Wifi</label> <br>
+                                <input class="w3-check" type="checkbox" name="tidur">
+                                <label>Perlengkapan Tidur</label> <br>
                             </td>
                         </tr>
                         <tr>
@@ -86,6 +106,8 @@
                                 <input class="w3-radio" type="radio" name="jumlah" value="1">1
                                 <input class="w3-radio" type="radio" name="jumlah" value="2">2
                                 <input class="w3-radio" type="radio" name="jumlah" value="3">3
+                                <input class="w3-radio" type="radio" name="jumlah" value="4">4
+                                <input class="w3-radio" type="radio" name="jumlah" value="5">5
                             </td>
                         </tr>
                         <tr>
