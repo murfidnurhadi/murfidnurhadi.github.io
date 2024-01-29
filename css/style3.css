@@ -79,18 +79,6 @@ select::-ms-expand {
 	height: 200px;
 }
 
-.background-header-dua {
-	min-height: 100vh;
-	background-image: url("foto/hutao2.png");
-	background-size: auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	 width: 100%;
-  height: auto;
-}
-
-
 .select {
   position: relative;
   display: flex;
@@ -201,11 +189,10 @@ body {
 }
 
 .background-header {
-    	padding: 10px;
     	background: url("foto/wallpaper.jpg");
-    	background-size: cover;
-    	background-position: center;
-    	height: 200px;
+	background-size: cover;
+	background-position: center;
+	height: 200px;
 }
 
 #footer {
