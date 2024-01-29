@@ -1,7 +1,7 @@
 body {
 /*	backdrop-filter: blur(2px);*/
 	min-height: 100vh;
-	background-image: url("foto/hutao.png");
+/* 	background-image: url("foto/hutao.png"); */
 	background-size: cover;
 	background-position: center;
 }
