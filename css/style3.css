@@ -189,18 +189,18 @@ select::-ms-expand {
 	background-image: linear-gradient(to bottom right, #02147d, #3150ff);
 }
 
-@media(max-width:600px) {
-	body {
-		background-image: url("foto/waifu.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center;
-	  width: auto;
+@media(max-width:1023px) {
+body {
+	background-image: url("foto/waifu.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	width: auto;
   	height: auto;
 }
 
-    .background-header {
+.background-header {
     	padding: 10px;
     	background: url("foto/wallpaper.jpg");
     	background-size: cover;
